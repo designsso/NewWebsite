@@ -1,14 +1,14 @@
 console.log(screen.width)
 $('#sub').hover(() => {
-	if(screen.width < 1440) {
+	if(screen.width <= 1440) {
 		$('#sub').animate({
-			marginTop: '-700px',
+			marginTop: '-500px',
 			scrollTop: 0,
 			height: $('#main').height() + 'px'
 		}, 0);
 	} else {
 		$('#sub').animate({
-			marginTop: '-500px',
+			marginTop: '-700px',
 			scrollTop: 0,
 			height: $('#main').height() + 'px'
 		}, 0);
@@ -51,15 +51,15 @@ $('#sub').hover(() => {
 
 $(document).ready(function(){
     $('#btnup').on('click', () => {
-		if(screen.width < 1440) {
+		if(screen.width <= 1440) {
 			$('#sub').animate({
-				marginTop: '-700px',
+				marginTop: '-500px',
 				scrollTop: 0,
 				height: $('#main').height() + 'px'
 			}, 0);
 		} else {
 			$('#sub').animate({
-				marginTop: '-500px',
+				marginTop: '-700px',
 				scrollTop: 0,
 				height: $('#main').height() + 'px'
 			}, 0);
