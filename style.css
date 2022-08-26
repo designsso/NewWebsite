@@ -338,3 +338,9 @@ body::-webkit-scrollbar {
         margin-bottom: 10px;
     }
 }
+
+@media screen and (min-width: 800px) and (max-width: 1300) {
+    #cont {
+        margin-top: -100px;
+    }
+}
