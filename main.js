@@ -1,26 +1,20 @@
 console.log(screen.width)
 $('#sub').hover(() => {
-	if(screen.width < 1400) {
-		$('#sub').animate({
-			marginTop: '-500px',
-			scrollTop: 0,
-			height: $('#main').height() + 'px'
-		}, 0);
-	// } else if(screen.width > 1400) {
-	// 	$('#sub').animate({
-	// 		marginTop: '-700px',
-	// 		scrollTop: 0,
-	// 		height: $('#main').height() + 'px'
-	// 	}, 0);
-	} else {
+	if(screen.width < 1440) {
 		$('#sub').animate({
 			marginTop: '-700px',
 			scrollTop: 0,
 			height: $('#main').height() + 'px'
 		}, 0);
+	} else {
+		$('#sub').animate({
+			marginTop: '-500px',
+			scrollTop: 0,
+			height: $('#main').height() + 'px'
+		}, 0);
 	}
 
-	$('#sub').css('overflow', 'auto')
+	$('#sub').css('overflow', 'auto')/Users/louis289/Downloads/NewWebsite-main/main.js
 
 	$('.btn-group-vertical').animate({
 		marginTop: '-75px',
@@ -31,18 +25,12 @@ $('#sub').hover(() => {
 		$('#submain').css('visibility', 'hidden');
 	}, 100);
 }, () => {
-	if(screen.width < 1400) {
+	if(screen.width < 1440) {
 		$('#sub').animate({
 			marginTop: '-150px',
 			scrollTop: '0px',
 			height: '150px'
 		}, 0);
-	// } else if(screen.width > 1400) {
-	// 	$('#sub').animate({
-	// 		marginTop: '-500px',
-	// 		scrollTop: '0px',
-	// 		height: '175px'
-	// 	}, 0);
 	}  else {
 		$('#sub').animate({
 			marginTop: '-175px',
@@ -63,15 +51,15 @@ $('#sub').hover(() => {
 
 $(document).ready(function(){
     $('#btnup').on('click', () => {
-		if(screen.width < 1400) {
+		if(screen.width < 1440) {
 			$('#sub').animate({
-				marginTop: '-500px',
+				marginTop: '-700px',
 				scrollTop: 0,
 				height: $('#main').height() + 'px'
 			}, 0);
 		} else {
 			$('#sub').animate({
-				marginTop: '-700px',
+				marginTop: '-500px',
 				scrollTop: 0,
 				height: $('#main').height() + 'px'
 			}, 0);
@@ -90,7 +78,7 @@ $(document).ready(function(){
     })
 
     $('#btndown').on('click', () => {
-		if(screen.width < 1400) {
+		if(screen.width < 1440) {
 			$('#sub').animate({
 				marginTop: '-150px',
 				scrollTop: '0px',
