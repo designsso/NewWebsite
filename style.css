@@ -341,6 +341,6 @@ body::-webkit-scrollbar {
 
 @media screen and (min-width: 900px) and (max-width: 1040) {
     #cont {
-        margin-top: -100px;
+        margin-top: -75px;
     }
 }
