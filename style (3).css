@@ -1,0 +1,400 @@
+body {
+    background: linear-gradient(156deg, rgba(56,248,237,1) 0%, rgba(32,167,159,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Segoe UI, sans-serif;
+    overflow: hidden;
+    height: 100%;
+}
+
+html, html:focus-within {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    background: transparent; 
+    width: 0px;
+}
+
+#btnup {
+    padding-top: -10px;
+}
+
+#btndown {
+    padding-top: 10px;
+}
+
+.btngroup {
+    height: 100px;
+    color: white;
+    margin-top: 150px;
+}
+
+#newP .nav-tabs {
+    width: 100%;
+}
+
+#newP nav {
+    margin-top: -30px;
+}
+
+#newP .nav-tabs button {
+    margin: 0 1.8rem 0 1.8rem;
+}
+
+/* main card */
+.dark, #main {
+    background-color: #2B2B2B;
+}
+
+#brush {
+    margin-top: -100px;
+    height: 500px;
+    width: 500px;
+}
+
+.blue-bg {
+    background-color: #38F8ED;
+}
+
+.blue-text {
+    color: #38F8ED;
+}
+
+.bhover {
+    color: white;
+    border: 1px solid whitesmoke;
+}
+
+.bhover:hover {
+    background-color: #38F8ED;
+    border: none;
+    color: black;
+}
+
+#main {
+    /*margin-bottom: 80px;*/
+    padding-top: -20px;
+    height: 700px;
+    border-radius: 2em;
+}
+
+/* main card */
+
+/* sub card */
+#sub {
+    background-color: #434343;
+    position: relative;
+    transition: all .3s ease-out;
+    margin-top: -175px;
+    height: 175px;
+    overflow: hidden;
+    border-radius: 2em;
+}
+
+#sub::-webkit-scrollbar {
+    display: none;
+}
+
+.tab-pane {
+    padding: 0 40px 0 40px;
+}
+
+.scrolly {
+    overflow-y: scroll;
+    height: auto !important;
+}
+
+.scrolly:hover {
+    overflow: scroll !important;
+}
+
+.scrolly::-webkit-scrollbar {
+    background: transparent; /* make scrollbar transparent */
+    width: 0px;
+}
+
+.nav-tabs {
+    border: none;
+}
+
+.nav-tabs .nav-link {
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.nav-tabs .nav-link.active {
+    color: #38F8ED;
+    border: none;
+    /*border-bottom: 1px solid #38F8ED;*/
+}
+/* sub card */
+
+.container {
+    /*margin-bottom: 300px;*/
+    margin-top: 7%;
+    height: 150%;
+    /*width: 50%;*/
+}
+
+#submain {
+    margin-top: 3rem;
+    padding: 3rem !important;
+}
+
+.btn-group-vertical .btngroup {
+    border-radius: 2rem;
+}
+
+.arrows {
+    color: white;
+    /*padding-bottom: 15px;*/
+}
+
+.arrows:hover {
+    color: #38F8ED;
+}
+
+#newP .nav-tabs {
+    padding: 3rem 5px 0 5px !important;
+}
+
+#newP .tab-content {
+    padding: 0 3rem 3rem 3rem !important;
+    height: 100%;
+}
+
+#newP nav {
+    /*padding-top: -125px !important;*/
+}
+
+.mrt {
+    padding: 1rem 3rem 3rem 3rem !important;
+}
+
+.main-btns {
+    width: 75%;
+}
+
+.main-btns2 {
+    margin-left: -50px;
+}
+
+.p-mb-1:hover {
+    color: black;
+    background-color: #38F8ED;
+    border: 1px solid #38F8ED;
+}
+
+.p-mb-2:hover {
+    color: white;
+    border: 1px solid #2B2B2B;
+}
+
+#btndown:hover, #btndown:active, #btndown:focus {
+    background-color: #2B2B2B;
+}
+
+#nav-tab {
+    padding: 0 15px 0 15px;
+    margin-left: 40px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 975px) {
+    #main-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #newP .nav-tabs {
+        padding: 3rem 2rem 0 10px !important;
+    }
+
+    .main-btns2 {
+        margin-left: -35px;
+        width: 100%;
+    }
+
+    #main {
+        /*margin-bottom: 80px;*/
+        padding-top: -20px;
+        height: 500px;
+    }
+
+    .mrt {
+        margin-bottom: -300px;
+        padding: 0 3rem 3rem 3rem !important;
+    }
+
+    #submain {
+        margin-top: 0 !important;
+    }
+
+    .container {
+        /*margin-bottom: 300px;*/
+        margin-top: 4%;
+        height: 100%;
+        /*width: 50%;*/
+    }
+    
+    #brush {
+        margin-top: -75px;
+        height: 375px;
+        width: 375px;
+    }
+
+    #sub {
+        margin-top: -150px;
+        height: 150px;
+        /*overflow-x: scr;*/
+    }
+
+    #newP .nav-tabs {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    #newP .nav-tabs button {
+        margin: 0 30px 0 0;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        overflow: scroll;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .tab-pane {
+        padding: 0 0 0 0;
+    }
+
+    #newP .nav-tabs {
+        /*margin: 0 !important;*/
+        margin-left: 25px !important;
+        /*margin-right: 60px;*/
+    }
+
+    #newP .nav-tabs button {
+        margin: 0 10px 0 0;
+        height: 35px;
+    }
+
+    .mrt {
+        padding-top: 3rem !important;
+    }
+
+    #info {
+        padding: 1rem -10px 1.5rem -10px !important;
+    }
+
+    #newP {
+        padding: 0 !important;
+    }
+
+    .main-btns {
+        border-radius: 2em;
+        /*width: 40%;*/
+    }
+
+    #cont {
+        padding: 0;
+        margin-top: -1px;
+        /*overflow: hidden;*/
+    }
+
+    #main {
+        margin-top: -3rem;
+        width: 100%;
+        padding: 0;
+        border-radius: 1px;
+    }
+
+    #sub {
+        height: 100%;
+        border-radius: 1px;
+        margin-top: -200px;
+        /*margin-bottom: 75px;*/
+        overflow: scroll;
+        /*overflow-x: hidden;*/
+        /*border-top: 1px solid #38F8ED;*/
+    }
+
+    .scrolly {
+        height: 100%;
+        overflow: scroll;
+    }
+
+    .scrolly div {
+        padding-bottom: 10px;
+    }
+
+    .scrolly img {
+        width: 90%;
+    }
+
+    #sub .card-body {
+        padding: 0;
+    }
+
+    #submain {
+        padding: 0 !important;
+    }
+
+    #brush {
+        display: none;
+    }
+
+    .main-btns1 {
+        width: 100%;
+    }
+
+    .main-btns2 {
+        width: 100%;
+    }
+
+    .main-btns {
+        margin: 0 2px 0 2px;
+    }
+
+    .btn-group-vertical {
+        display: none;
+    }
+
+    .scrolly {
+        scrollbar-width: none; 
+    }
+
+    .tab-pane {
+        margin-top: -40px;
+    }
+
+    .tab-pane img {
+        width: 90%;
+        margin-left: 15px;
+        padding: -3rem !important;
+    }
+
+    .tab-content {
+        margin-top: 15px;
+    }
+
+    #nav-tab {
+        padding: 3rem !important;
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+}
