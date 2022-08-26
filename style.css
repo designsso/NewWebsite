@@ -49,8 +49,9 @@ body::-webkit-scrollbar {
 }
 
 #brush {
-    height: 300px;
-    width: 300px;
+    margin-top: -100px;
+    height: 500px;
+    width: 500px;
 }
 
 .blue-bg {
@@ -75,7 +76,7 @@ body::-webkit-scrollbar {
 #main {
     /*margin-bottom: 80px;*/
     padding-top: -20px;
-    height: 550px;
+    height: 700px;
     border-radius: 2em;
 }
 
@@ -139,10 +140,13 @@ body::-webkit-scrollbar {
 
 .container {
     /*margin-bottom: 300px;*/
-    margin-top: 10%;
+    margin-top: 7%;
+    height: 150%;
+    /*width: 50%;*/
 }
 
 #submain {
+    margin-top: 3rem;
     padding: 3rem !important;
 }
 
@@ -191,7 +195,7 @@ body::-webkit-scrollbar {
     border: 1px solid #2B2B2B;
 }
 
-#btndown:hover {
+#btndown:hover, #btndown:active, #btndown:focus {
     background-color: #2B2B2B;
 }
 
@@ -209,6 +213,10 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 600px) {
     body {
         overflow: scroll;
+    }
+
+    .container {
+        width: 100%;
     }
 
     .mrt {
@@ -244,7 +252,7 @@ body::-webkit-scrollbar {
     #sub {
         height: 100%;
         border-radius: 1px;
-        margin-top: -200px;
+        margin-top: -250px;
         /*margin-bottom: 75px;*/
         overflow-y: scroll;
         overflow-x: hidden;
