@@ -29,10 +29,13 @@ body::-webkit-scrollbar {
     height: 100px;
     color: white;
     margin-top: 150px;
+    /*margin-left: 100px;*/
 }
 
 #newP .nav-tabs {
     width: 100%;
+    margin-left: ;
+    padding: 3rem 10px 0 90px !important;
 }
 
 #newP nav {
@@ -40,7 +43,7 @@ body::-webkit-scrollbar {
 }
 
 #newP .nav-tabs button {
-    margin: 0 1.8rem 0 1.8rem;
+    margin: 0 2.5rem 0 0.5rem;
 }
 
 /* main card */
@@ -49,9 +52,9 @@ body::-webkit-scrollbar {
 }
 
 #brush {
-    margin-top: -100px;
-    height: 500px;
-    width: 500px;
+    /*margin-top: -300px;*/
+    /*height: 400px;*/
+    /*width: 400px;*/
 }
 
 .blue-bg {
@@ -76,14 +79,28 @@ body::-webkit-scrollbar {
 #main {
     /*margin-bottom: 80px;*/
     padding-top: -20px;
-    height: 700px;
+    height: 800px;
+    width: 1300px;
+    margin: 0 auto;
+    margin-right: 0;
     border-radius: 2em;
 }
 
 /* main card */
 
+.container-md {
+    /*margin-bottom: 300px;*/
+    margin-top: 4%;
+    margin-right: 18%;
+    /*height: 150%;*/
+    /*width: 50%;*/
+}
+
 /* sub card */
 #sub {
+    margin: 0 auto;
+    margin-right: 0;
+    width: 1300px;
     background-color: #434343;
     position: relative;
     transition: all .3s ease-out;
@@ -138,16 +155,13 @@ body::-webkit-scrollbar {
 }
 /* sub card */
 
-.container {
-    /*margin-bottom: 300px;*/
-    margin-top: 7%;
-    height: 150%;
-    /*width: 50%;*/
+#submain {
+    /*margin-top: 3rem;*/
+    padding: 3rem !important;
 }
 
-#submain {
-    margin-top: 3rem;
-    padding: 3rem !important;
+.btn-group-vertical {
+    margin-left: 100px;
 }
 
 .btn-group-vertical .btngroup {
@@ -163,12 +177,8 @@ body::-webkit-scrollbar {
     color: #38F8ED;
 }
 
-#newP .nav-tabs {
-    padding: 3rem 5px 0 5px !important;
-}
-
 #newP .tab-content {
-    padding: 0 3rem 3rem 3rem !important;
+    padding: 0 10rem 3rem 8rem !important;
     height: 100%;
 }
 
@@ -177,11 +187,8 @@ body::-webkit-scrollbar {
 }
 
 .mrt {
-    padding: 1rem 3rem 3rem 3rem !important;
-}
-
-.main-btns {
-    width: 75%;
+    padding: 7rem 3rem 3rem 7rem ;
+    /*padding-left: 2rem;*/
 }
 
 .main-btns2 {
@@ -208,73 +215,91 @@ body::-webkit-scrollbar {
     margin-left: 40px;
 }
 
-@media screen and (min-width: 600px) and (max-width: 975px) {
+@media screen and (min-width: 992px) and  (max-width: 1440px) {
+    #main {
+        /*margin-bottom: 80px;*/
+        padding-top: -20px;
+        height: 600px;
+        width: 900px;
+        margin: 0 auto;
+        margin-right: -40px;
+        border-radius: 2em;
+    }
+
+    /* main card */
+
+    .container-md {
+        /*margin-bottom: 300px;*/
+        margin-top: 10%;
+        margin-right: 2%;
+        /*height: 150%;*/
+        /*width: 50%;*/
+    }
+
+    /* sub card */
+    #sub {
+        margin: 0 auto;
+        margin-right: -40px;
+        width: 900px;
+        background-color: #434343;
+        position: relative;
+        transition: all .3s ease-out;
+        margin-top: -175px;
+        height: 175px;
+        overflow: hidden;
+        border-radius: 2em;
+    }
+
+    #newP .nav-tabs button {
+        margin: 0 0.5rem 0 0.5rem;
+    }
+
+    #newP .nav-tabs {
+        width: 100%;
+        margin-left: ;
+        padding: 3rem 10px 0 10px !important;
+    }
+
+    .btn-group-vertical {
+        margin-left: 30px;
+    }
+
+    .mrt {
+        padding: 1rem 3rem 3rem 5rem !important;
+        /*padding-left: 2rem;*/
+    }
+
+    #brush {
+        margin-top: -50px;
+    }
+}
+
+@media screen and (max-width: 500px){
     #main-img {
         display: none;
     }
 }
 
-@media screen and (max-width: 1440px) {
-    #newP .nav-tabs {
-        padding: 3rem 2rem 0 10px !important;
+@media screen and (min-width: 500px) and (max-width: 767px) {
+    .btnss {
+        width: 50%;
     }
 
-    .main-btns2 {
-        margin-left: -35px;
-        width: 100%;
-    }
-
-    #main {
-        /*margin-bottom: 80px;*/
-        padding-top: -20px;
-        height: 500px;
-    }
-
-    .mrt {
-        margin-bottom: -300px;
-        padding: 0 3rem 3rem 3rem !important;
-    }
-
-    #submain {
-        margin-top: 0 !important;
-    }
-
-    .container {
-        /*margin-bottom: 300px;*/
-        margin-top: 8%;
-        height: 100%;
-        /*width: 50%;*/
-    }
-    
     #brush {
-        margin-top: -75px;
-        height: 375px;
-        width: 375px;
-    }
-
-    #sub {
-        margin-top: -150px;
-        height: 150px;
-        /*overflow-x: scr;*/
-    }
-
-    #newP .nav-tabs {
-        margin-left: 60px;
-        margin-right: 60px;
-    }
-
-    #newP .nav-tabs button {
-        margin: 0 30px 0 0;
-        height: 35px;
+        margin-top: -300px;
+        margin-left: auto;
+        margin: -250px 100px 0 65%;
+        height: 300px;
+        width: 300px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
     body {
         overflow: scroll;
     }
 
-    .container {
+    .container-md {
         width: 100%;
     }
 
@@ -285,6 +310,7 @@ body::-webkit-scrollbar {
     #newP .nav-tabs {
         /*margin: 0 !important;*/
         margin-left: 25px !important;
+        padding-right: 20px;
         /*margin-right: 60px;*/
     }
 
@@ -294,11 +320,11 @@ body::-webkit-scrollbar {
     }
 
     .mrt {
-        padding-top: 3rem !important;
+        padding: 0 0 0 3rem !important;
     }
 
     #info {
-        padding: 1rem -10px 1.5rem -10px !important;
+        /*padding: 0rem -10px 1.5rem -10px !important;*/
     }
 
     #newP {
@@ -312,12 +338,13 @@ body::-webkit-scrollbar {
 
     #cont {
         padding: 0;
-        margin-top: -1px;
-        /*overflow: hidden;*/
+        width: 100%;
+        margin-top: 0px;
+        overflow-x: hidden;
     }
 
     #main {
-        margin-top: -3rem;
+        margin-top: 0rem;
         width: 100%;
         padding: 0;
         border-radius: 1px;
@@ -325,11 +352,14 @@ body::-webkit-scrollbar {
 
     #sub {
         height: 100%;
+        width: 100%;
         border-radius: 1px;
-        margin-top: -200px;
+        margin-top: -550px;
+        justify-content: center !important;
+        margin-right: 5px;
         /*margin-bottom: 75px;*/
         overflow: scroll;
-        /*overflow-x: hidden;*/
+        overflow-x: hidden;
         /*border-top: 1px solid #38F8ED;*/
     }
 
@@ -352,10 +382,6 @@ body::-webkit-scrollbar {
 
     #submain {
         padding: 0 !important;
-    }
-
-    #brush {
-        display: none;
     }
 
     .main-btns1 {
